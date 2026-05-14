@@ -17,9 +17,9 @@
   --aurora-2:#7b68ee;
   --aurora-3:#00bfff;
   --aurora-4:#ff6ec7;
-  --text-primary:#e8eaf6;
-  --text-secondary:#8892b0;
-  --text-muted:#5a6380;
+  --text-primary:#edf0fa;
+  --text-secondary:#b8c4de;
+  --text-muted:#8494b8;
   --border:#1e2a45;
   --glow:rgba(0,212,170,0.15);
 }
@@ -47,7 +47,7 @@ a{text-decoration:none;color:inherit}
 .navbar.scrolled{padding:.8rem 4rem;background:rgba(10,14,23,.95);box-shadow:0 4px 30px rgba(0,0,0,.3)}
 .nav-logo{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,var(--aurora-1),var(--aurora-3));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .nav-links{display:flex;gap:2.2rem;list-style:none}
-.nav-links a{font-size:.88rem;font-weight:500;color:var(--text-secondary);letter-spacing:.5px;transition:all .3s;position:relative}
+.nav-links a{font-size:.88rem;font-weight:500;color:#9aaac8;letter-spacing:.5px;transition:all .3s;position:relative}
 .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--aurora-1);transition:width .3s}
 .nav-links a:hover{color:var(--aurora-1)}
 .nav-links a:hover::after{width:100%}
@@ -66,7 +66,7 @@ a{text-decoration:none;color:inherit}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:700;line-height:1.08;margin-bottom:1.5rem;animation:fadeUp .8s ease-out .2s both}
 .hero h1 .gradient{background:linear-gradient(135deg,var(--aurora-1),var(--aurora-3),var(--aurora-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:200% 200%;animation:shimmer 5s ease-in-out infinite}
 @keyframes shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
-.hero p{font-size:1.15rem;color:var(--text-secondary);max-width:570px;margin-bottom:2.5rem;animation:fadeUp .8s ease-out .4s both;line-height:1.8}
+.hero p{font-size:1.18rem;color:#b8c4de;max-width:570px;margin-bottom:2.5rem;animation:fadeUp .8s ease-out .4s both;line-height:1.8}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .8s ease-out .6s both}
 .btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2.2rem;border-radius:100px;font-weight:600;font-size:.92rem;border:none;cursor:pointer;background:linear-gradient(135deg,var(--aurora-1),var(--aurora-3));color:var(--bg-primary);transition:all .3s;box-shadow:0 4px 25px rgba(0,212,170,.25)}
 .btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 40px rgba(0,212,170,.45)}
@@ -80,15 +80,15 @@ a{text-decoration:none;color:inherit}
 .stat:last-child::after{display:none}
 .stat h3{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;background:linear-gradient(135deg,var(--aurora-1),var(--aurora-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem;display:flex;align-items:baseline;gap:.3rem}
 .stat h3::after{content:attr(data-suffix);font-size:.9rem;color:var(--aurora-1)}
-.stat p{font-size:.7rem;color:var(--text-muted);letter-spacing:1.5px;text-transform:uppercase;margin-top:.3rem;font-weight:500}
-.stat .desc{font-size:.8rem;color:var(--text-secondary);margin-top:.6rem;line-height:1.5}
+.stat p{font-size:.7rem;color:#8494b8;letter-spacing:1.5px;text-transform:uppercase;margin-top:.3rem;font-weight:500}
+.stat .desc{font-size:.8rem;color:#b0bdd4;margin-top:.6rem;line-height:1.5}
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 
 /* ─── SECTIONS ─── */
 section{position:relative;z-index:1;padding:7rem 8%}
 .section-header{text-align:center;margin-bottom:4.5rem}
-.section-label{font-size:.75rem;color:var(--aurora-1);letter-spacing:4px;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+.section-label{font-size:.75rem;color:#00e6b8;letter-spacing:4px;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
 .section-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700}
 .section-line{width:60px;height:3px;background:linear-gradient(90deg,var(--aurora-1),var(--aurora-3));margin:1.2rem auto 0;border-radius:2px}
 
@@ -102,13 +102,13 @@ section{position:relative;z-index:1;padding:7rem 8%}
 .about-info .role{color:var(--aurora-1);font-size:.9rem;text-align:center;margin-bottom:.4rem}
 .about-info .location{color:var(--text-muted);font-size:.82rem;text-align:center;margin-bottom:1.5rem}
 .cert-badges{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-top:1.5rem}
-.cert-badge{padding:.45rem 1rem;border:1px solid rgba(0,212,170,.2);border-radius:100px;font-size:.73rem;color:var(--aurora-1);background:rgba(0,212,170,.06);transition:all .3s;cursor:default}
-.cert-badge:hover{background:rgba(0,212,170,.15);transform:scale(1.05)}
-.about-text p{color:var(--text-secondary);font-size:1.02rem;margin-bottom:1.5rem;line-height:1.85}
-.about-text p strong{color:var(--text-primary);font-weight:600}
+.cert-badge{padding:.45rem 1rem;border:1px solid rgba(0,212,170,.3);border-radius:100px;font-size:.73rem;color:#5aedc8;background:rgba(0,212,170,.08);transition:all .3s;cursor:default}
+.cert-badge:hover{background:rgba(0,212,170,.18);transform:scale(1.05)}
+.about-text p{color:#bcc8e0;font-size:1.04rem;margin-bottom:1.5rem;line-height:1.85}
+.about-text p strong{color:#ffffff;font-weight:600}
 .social-row{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
-.social-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.4rem;border:1px solid var(--border);border-radius:100px;font-size:.82rem;color:var(--text-secondary);transition:all .3s}
-.social-btn:hover{border-color:var(--aurora-1);color:var(--aurora-1);transform:translateY(-2px)}
+.social-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.4rem;border:1px solid rgba(30,42,69,.8);border-radius:100px;font-size:.82rem;color:#9aaac8;transition:all .3s}
+.social-btn:hover{border-color:var(--aurora-1);color:#00e6b8;transform:translateY(-2px)}
 
 /* ─── EXPERIENCE ─── */
 .timeline{position:relative;max-width:820px;margin:0 auto}
@@ -119,10 +119,10 @@ section{position:relative;z-index:1;padding:7rem 8%}
 .timeline-card:hover{border-color:rgba(0,212,170,.3);transform:translateX(8px);box-shadow:0 12px 45px rgba(0,212,170,.1)}
 .timeline-card .period{font-size:.76rem;color:var(--aurora-1);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.6rem;display:inline-block;padding:.3rem .8rem;background:rgba(0,212,170,.08);border-radius:100px}
 .timeline-card h3{font-family:'Playfair Display',serif;font-size:1.35rem;margin:.6rem 0 .3rem}
-.timeline-card .company{color:var(--text-secondary);font-size:.9rem;margin-bottom:1.2rem;display:flex;align-items:center;gap:.5rem}
+.timeline-card .company{color:#9aaac8;font-size:.9rem;margin-bottom:1.2rem;display:flex;align-items:center;gap:.5rem}
 .timeline-card ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
-.timeline-card li{color:var(--text-secondary);font-size:.88rem;padding-left:1.5rem;position:relative;line-height:1.6}
-.timeline-card li::before{content:'▹';position:absolute;left:0;color:var(--aurora-1);font-weight:700}
+.timeline-card li{color:#c5cfe6;font-size:.9rem;padding-left:1.5rem;position:relative;line-height:1.6}
+.timeline-card li::before{content:'▹';position:absolute;left:0;color:var(--aurora-1);font-weight:700;font-size:1rem}
 
 /* ─── SKILLS ─── */
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.8rem}
@@ -133,8 +133,8 @@ section{position:relative;z-index:1;padding:7rem 8%}
 .skill-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:1.2rem}
 .skill-category h3{font-size:1rem;font-weight:600;margin-bottom:1.2rem;color:var(--text-primary)}
 .skill-tags{display:flex;flex-wrap:wrap;gap:.5rem}
-.skill-tag{padding:.35rem .85rem;border-radius:100px;font-size:.75rem;font-weight:500;background:rgba(0,212,170,.08);color:var(--aurora-1);border:1px solid rgba(0,212,170,.15);transition:all .3s}
-.skill-tag:hover{background:rgba(0,212,170,.18);transform:scale(1.06)}
+.skill-tag{padding:.35rem .85rem;border-radius:100px;font-size:.75rem;font-weight:500;background:rgba(0,212,170,.1);color:#5aedc8;border:1px solid rgba(0,212,170,.25);transition:all .3s}
+.skill-tag:hover{background:rgba(0,212,170,.22);transform:scale(1.06)}
 
 /* ─── PROJECTS ─── */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
@@ -153,46 +153,44 @@ section{position:relative;z-index:1;padding:7rem 8%}
 .project-body{padding:1.4rem 2rem 2rem;flex:1;display:flex;flex-direction:column}
 .project-body h3{font-family:'Playfair Display',serif;font-size:1.25rem;margin-bottom:.6rem;transition:color .3s}
 .project-card:hover .project-body h3{color:var(--aurora-1)}
-.project-body p{color:var(--text-secondary);font-size:.88rem;margin-bottom:1.4rem;line-height:1.7;flex:1}
+.project-body p{color:#b8c4de;font-size:.9rem;margin-bottom:1.4rem;line-height:1.7;flex:1}
 .project-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem}
 .project-status{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;color:var(--aurora-1);background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.2);padding:.3rem .8rem;border-radius:100px}
 .project-status .sdot{width:6px;height:6px;background:var(--aurora-1);border-radius:50%;animation:pulse-dot 2s infinite}
 .tech-stack{display:flex;flex-wrap:wrap;gap:.4rem}
-.tech-tag{padding:.28rem .72rem;border-radius:100px;font-size:.72rem;background:rgba(0,212,170,.06);color:var(--aurora-3);border:1px solid rgba(0,191,255,.12);transition:all .3s}
-.tech-tag:hover{background:rgba(0,191,255,.12)}
+.tech-tag{padding:.28rem .72rem;border-radius:100px;font-size:.72rem;background:rgba(0,191,255,.1);color:#6dd8f5;border:1px solid rgba(0,191,255,.2);transition:all .3s}
+.tech-tag:hover{background:rgba(0,191,255,.18)}
 
 /* ─── ACHIEVEMENTS ─── */
 .achievements-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.6rem}
 .achievement-card{background:var(--bg-card);border:1px solid var(--border);border-radius:18px;padding:2.2rem;text-align:center;transition:all .4s}
 .achievement-card:hover{border-color:rgba(0,212,170,.3);transform:translateY(-6px);box-shadow:0 18px 55px rgba(0,212,170,.1)}
 .achievement-card .icon{font-size:2.8rem;margin-bottom:1.2rem;filter:drop-shadow(0 4px 12px rgba(0,212,170,.25))}
-.achievement-card h4{font-size:1.05rem;font-weight:600;margin-bottom:.8rem}
-.achievement-card p{color:var(--text-secondary);font-size:.86rem;line-height:1.65}
+.achievement-card h4{font-size:1.05rem;font-weight:600;margin-bottom:.8rem;color:#edf0fa}
+.achievement-card p{color:#b0bdd4;font-size:.88rem;line-height:1.65}
 
 /* ─── CONTACT SECTION ─── */
 .contact-section{position:relative;overflow:hidden}
 .contact-wrapper{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start;max-width:1100px;margin:0 auto;position:relative;z-index:2}
-
-/* contact info left side */
 .contact-info h3{font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:1rem}
-.contact-info p{color:var(--text-secondary);font-size:1rem;margin-bottom:2rem;line-height:1.8}
+.contact-info p{color:#b8c4de;font-size:1rem;margin-bottom:2rem;line-height:1.8}
 .contact-links{display:flex;flex-direction:column;gap:1rem}
 .contact-link-item{display:flex;align-items:center;gap:1rem;padding:1.2rem 1.6rem;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;transition:all .4s;text-decoration:none;color:inherit}
 .contact-link-item:hover{border-color:rgba(0,212,170,.4);transform:translateX(6px);box-shadow:0 10px 35px rgba(0,212,170,.12)}
 .contact-link-item:hover .cli-icon{transform:scale(1.15) rotate(5deg)}
 .cli-icon{font-size:1.8rem;transition:transform .4s}
-.cli-text strong{display:block;font-size:.88rem;font-weight:600;margin-bottom:.2rem}
-.cli-text span{font-size:.82rem;color:var(--aurora-1)}
+.cli-text strong{display:block;font-size:.88rem;font-weight:600;margin-bottom:.2rem;color:#edf0fa}
+.cli-text span{font-size:.82rem;color:#00e6b8}
 
-/* contact form right side */
+/* contact form */
 .contact-form-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:24px;padding:2.8rem;position:relative;overflow:hidden}
 .contact-form-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--aurora-1),var(--aurora-3),var(--aurora-2))}
 .form-title{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:.5rem}
-.form-subtitle{color:var(--text-secondary);font-size:.88rem;margin-bottom:2rem}
+.form-subtitle{color:#9aaac8;font-size:.88rem;margin-bottom:2rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
 .form-group{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem}
-.form-group label{font-size:.82rem;font-weight:600;color:var(--text-secondary);letter-spacing:.5px;text-transform:uppercase}
-.form-group input,.form-group textarea,.form-group select{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:12px;padding:.85rem 1.1rem;color:var(--text-primary);font-family:'DM Sans',sans-serif;font-size:.92rem;transition:all .3s;outline:none;resize:none}
+.form-group label{font-size:.82rem;font-weight:600;color:#9aaac8;letter-spacing:.5px;text-transform:uppercase}
+.form-group input,.form-group textarea,.form-group select{background:rgba(255,255,255,.06);border:1px solid rgba(30,42,69,.7);border-radius:12px;padding:.85rem 1.1rem;color:#e8eaf6;font-family:'DM Sans',sans-serif;font-size:.92rem;transition:all .3s;outline:none;resize:none}
 .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--aurora-1);background:rgba(0,212,170,.05);box-shadow:0 0 0 3px rgba(0,212,170,.08)}
 .form-group input::placeholder,.form-group textarea::placeholder{color:var(--text-muted)}
 .form-group textarea{height:130px}
@@ -218,10 +216,10 @@ section{position:relative;z-index:1;padding:7rem 8%}
 }
 
 /* ─── FOOTER ─── */
-.footer{position:relative;z-index:1;padding:2.5rem 8%;text-align:center;border-top:1px solid var(--border);color:var(--text-muted);font-size:.86rem}
+.footer{position:relative;z-index:1;padding:2.5rem 8%;text-align:center;border-top:1px solid var(--border);color:#8494b8;font-size:.86rem}
 .footer .heart{color:var(--aurora-4);display:inline-block;animation:heartbeat 1.5s ease-in-out infinite}
 .footer-links{display:flex;justify-content:center;gap:2rem;margin-bottom:1.2rem;flex-wrap:wrap}
-.footer-links a{color:var(--text-muted);font-size:.84rem;transition:color .3s}
+.footer-links a{color:#8494b8;font-size:.84rem;transition:color .3s}
 .footer-links a:hover{color:var(--aurora-1)}
 @keyframes heartbeat{0%,100%{transform:scale(1)}10%{transform:scale(1.3)}20%{transform:scale(1)}}
 
@@ -288,7 +286,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
   </div>
 </nav>
 
-<!-- ═══════ HERO ═══════ -->
+<!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-content">
     <div class="hero-tag">
@@ -298,8 +296,8 @@ section{position:relative;z-index:1;padding:7rem 8%}
     <h1>Hi, I'm <br><span class="gradient">Nikhil Chaudhary</span></h1>
     <p>Software & Data Engineer with 2 years turning complex data into decisions. I build pipelines, full-stack platforms, and AI-powered products that actually ship.</p>
     <div class="hero-btns">
-      <a href="#contact" class="btn-primary">✉ Let's Connect</a>
-      <a href="#projects" class="btn-outline">↗ View Projects</a>
+      <a href="#contact" class="btn-primary">&#10003; Let's Connect</a>
+      <a href="#projects" class="btn-outline">&#8599; View Projects</a>
     </div>
     <div class="hero-stats">
       <div class="stat">
@@ -316,7 +314,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
   </div>
 </section>
 
-<!-- ═══════ ABOUT ═══════ -->
+<!-- ABOUT -->
 <section id="about" style="background:var(--bg-secondary)">
   <div class="section-header reveal">
     <p class="section-label">Introduction</p>
@@ -330,19 +328,19 @@ section{position:relative;z-index:1;padding:7rem 8%}
         <div class="about-info">
           <h3>Nikhil Chaudhary</h3>
           <p class="role">Software Engineer & Data Analyst</p>
-          <p class="location">📍 New Delhi, India</p>
+          <p class="location">&#128205; New Delhi, India</p>
           <div class="cert-badges">
-            <span class="cert-badge">☁ AWS Cloud</span>
-            <span class="cert-badge">📊 Power BI</span>
-            <span class="cert-badge">🐍 Python</span>
-            <span class="cert-badge">🗄 SQL Expert</span>
-            <span class="cert-badge">🧠 ML / AI</span>
+            <span class="cert-badge">&#9729; AWS Cloud</span>
+            <span class="cert-badge">&#128202; Power BI</span>
+            <span class="cert-badge">&#128013; Python</span>
+            <span class="cert-badge">&#128451; SQL Expert</span>
+            <span class="cert-badge">&#129504; ML / AI</span>
           </div>
         </div>
         <div class="social-row" style="justify-content:center;margin-top:2rem">
-          <a href="https://linkedin.com/in/nikcd" target="_blank" class="social-btn">💼 LinkedIn</a>
-          <a href="https://github.com/nik464" target="_blank" class="social-btn">🔗 GitHub</a>
-          <a href="mailto:nikhil18chaudhary@gmail.com" class="social-btn">✉ Email</a>
+          <a href="https://linkedin.com/in/nikcd" target="_blank" class="social-btn">&#128188; LinkedIn</a>
+          <a href="https://github.com/nik464" target="_blank" class="social-btn">&#128279; GitHub</a>
+          <a href="mailto:nikhil18chaudhary@gmail.com" class="social-btn">&#9993; Email</a>
         </div>
       </div>
     </div>
@@ -351,14 +349,14 @@ section{position:relative;z-index:1;padding:7rem 8%}
       <p>With a background in <strong>Computer Science (CGPA 9.49/10, MSIT 2023)</strong>, I specialize in <strong>full-stack development, ETL pipeline automation, cloud data engineering on AWS</strong>, and crafting Power BI / Tableau dashboards for pharma enterprise clients.</p>
       <p>Beyond my day job, I've built and deployed impactful products — including a <strong>Keycloak-based SSO & Identity platform</strong>, an <strong>Open edX e-learning platform</strong>, an NIELIT-backed EdTech site, and an <strong>AI-powered agricultural drone</strong> analytics system. I love bridging software engineering with real-world impact.</p>
       <div class="social-row">
-        <a href="mailto:nikhil18chaudhary@gmail.com" class="social-btn">✉ nikhil18chaudhary@gmail.com</a>
-        <a href="tel:+918851154621" class="social-btn">📱 +91-8851154621</a>
+        <a href="mailto:nikhil18chaudhary@gmail.com" class="social-btn">&#9993; nikhil18chaudhary@gmail.com</a>
+        <a href="tel:+918851154621" class="social-btn">&#128241; +91-8851154621</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════ EXPERIENCE ═══════ -->
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-header reveal">
     <p class="section-label">Career Path</p>
@@ -371,7 +369,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       <div class="timeline-card">
         <span class="period">Oct 2025 — Present</span>
         <h3>Software Engineer</h3>
-        <p class="company">🏢 NIELIT · Ministry of Electronics & Information Technology, Govt. of India</p>
+        <p class="company">&#127970; NIELIT · Ministry of Electronics & Information Technology, Govt. of India</p>
         <ul>
           <li>Architecting full-stack software solutions for government EdTech initiatives serving 1M+ learners across NIELIT centers</li>
           <li>Designing and deploying microservices infrastructure using Docker, Kubernetes, and cloud-native technologies</li>
@@ -386,7 +384,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       <div class="timeline-card">
         <span class="period">Aug 2023 — Oct 2024</span>
         <h3>Software Engineer</h3>
-        <p class="company">🏢 ZS Associates · Gurugram, India</p>
+        <p class="company">&#127970; ZS Associates · Gurugram, India</p>
         <ul>
           <li>Engineered and deployed automated ETL pipelines (40+) reducing manual data prep overhead by 60% using Python, SQL & AWS Glue</li>
           <li>Built 15+ Power BI dashboards for global pharma clients, improving stakeholder decision velocity by 35%</li>
@@ -402,7 +400,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       <div class="timeline-card">
         <span class="period">2022 — 2023</span>
         <h3>Open Source Contributor</h3>
-        <p class="company">🌐 LetsGrowMore · Remote</p>
+        <p class="company">&#127760; LetsGrowMore · Remote</p>
         <ul>
           <li>Contributed to market analytics web projects during Summer of Code (SOC) program</li>
           <li>Built data visualization components and contributed to analytics-focused open-source repositories</li>
@@ -412,7 +410,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
   </div>
 </section>
 
-<!-- ═══════ SKILLS ═══════ -->
+<!-- SKILLS -->
 <section id="skills" style="background:var(--bg-secondary)">
   <div class="section-header reveal">
     <p class="section-label">Expertise</p>
@@ -421,7 +419,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
   </div>
   <div class="skills-grid">
     <div class="skill-category reveal">
-      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(0,212,170,.15),rgba(0,191,255,.1))">💻</div>
+      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(0,212,170,.15),rgba(0,191,255,.1))">&#128187;</div>
       <h3>Programming & Scripting</h3>
       <div class="skill-tags">
         <span class="skill-tag">Python</span><span class="skill-tag">SQL</span>
@@ -430,7 +428,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       </div>
     </div>
     <div class="skill-category reveal">
-      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(123,104,238,.15),rgba(255,110,199,.1))">📊</div>
+      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(123,104,238,.15),rgba(255,110,199,.1))">&#128202;</div>
       <h3>BI & Visualization</h3>
       <div class="skill-tags">
         <span class="skill-tag">Power BI</span><span class="skill-tag">Tableau</span>
@@ -439,7 +437,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       </div>
     </div>
     <div class="skill-category reveal">
-      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(0,191,255,.15),rgba(0,212,170,.1))">☁️</div>
+      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(0,191,255,.15),rgba(0,212,170,.1))">&#9729;&#65039;</div>
       <h3>Cloud & Big Data</h3>
       <div class="skill-tags">
         <span class="skill-tag">AWS Glue</span><span class="skill-tag">AWS S3</span>
@@ -448,7 +446,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       </div>
     </div>
     <div class="skill-category reveal">
-      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(255,110,199,.15),rgba(123,104,238,.1))">🗄️</div>
+      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(255,110,199,.15),rgba(123,104,238,.1))">&#128451;&#65039;</div>
       <h3>Databases & ETL</h3>
       <div class="skill-tags">
         <span class="skill-tag">PostgreSQL</span><span class="skill-tag">MySQL</span>
@@ -457,7 +455,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       </div>
     </div>
     <div class="skill-category reveal">
-      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(0,212,170,.15),rgba(255,110,199,.1))">🤖</div>
+      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(0,212,170,.15),rgba(255,110,199,.1))">&#129302;</div>
       <h3>ML & Data Science</h3>
       <div class="skill-tags">
         <span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span>
@@ -466,7 +464,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       </div>
     </div>
     <div class="skill-category reveal">
-      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(123,104,238,.15),rgba(0,191,255,.1))">🔧</div>
+      <div class="skill-icon" style="background:linear-gradient(135deg,rgba(123,104,238,.15),rgba(0,191,255,.1))">&#128295;</div>
       <h3>Dev & Workflow</h3>
       <div class="skill-tags">
         <span class="skill-tag">Git</span><span class="skill-tag">Docker</span>
@@ -477,7 +475,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
   </div>
 </section>
 
-<!-- ═══════ PROJECTS ═══════ -->
+<!-- PROJECTS -->
 <section id="projects">
   <div class="section-header reveal">
     <p class="section-label">Portfolio</p>
@@ -485,147 +483,85 @@ section{position:relative;z-index:1;padding:7rem 8%}
     <div class="section-line"></div>
   </div>
   <div class="projects-grid">
-
-    <!-- EchipHub -->
     <div class="project-card reveal">
       <div class="project-banner"></div>
       <div class="project-header">
-        <div class="project-icon" style="background:linear-gradient(135deg,rgba(0,212,170,.2),rgba(0,191,255,.15))">🎓</div>
-        <div class="project-links">
-          <a href="https://echiphub.in/" target="_blank" class="project-link" title="Live Site">🌐</a>
-        </div>
+        <div class="project-icon" style="background:linear-gradient(135deg,rgba(0,212,170,.2),rgba(0,191,255,.15))">&#127891;</div>
+        <div class="project-links"><a href="https://echiphub.in/" target="_blank" class="project-link" title="Live Site">&#127760;</a></div>
       </div>
       <div class="project-body">
-        <div class="project-meta">
-          <span class="project-status"><span class="sdot"></span> Live &amp; Active</span>
-        </div>
+        <div class="project-meta"><span class="project-status"><span class="sdot"></span> Live &amp; Active</span></div>
         <h3>eChipHub — NIELIT EdTech Platform</h3>
-        <p><strong>Premier semiconductor education ecosystem</strong> jointly developed by NIELIT &amp; SoCTeamup Semiconductors under MeitY (Ministry of Electronics &amp; IT, Govt. of India). Provides hands-on EDA (Electronic Design Automation) virtual labs with industry-standard tools (Verilator, Yosys, OpenLane, Magic), structured chip design pathways from RTL to GDSII, semiconductor fundamentals courses, and curated workshops. Operates across 5+ NIELIT centers (Delhi, Noida, Patna, Imphal) serving 1000+ learners annually. Integrates SSO, learning management, event booking, and alumni networking in a cohesive platform.</p>
+        <p><strong>Premier semiconductor education ecosystem</strong> jointly developed by NIELIT &amp; SoCTeamup Semiconductors under MeitY (Ministry of Electronics &amp; IT, Govt. of India). Provides hands-on EDA virtual labs with industry-standard tools (Verilator, Yosys, OpenLane, Magic), structured chip design pathways from RTL to GDSII, semiconductor fundamentals courses, and curated workshops. Operates across 5+ NIELIT centers (Delhi, Noida, Patna, Imphal) serving 1000+ learners annually. Integrates SSO, learning management, event booking, and alumni networking in a cohesive platform.</p>
         <div class="tech-stack">
-          <span class="tech-tag">WordPress / Elementor</span>
-          <span class="tech-tag">EDA Virtual Labs</span>
-          <span class="tech-tag">LearnDash LMS</span>
-          <span class="tech-tag">Keycloak SSO</span>
-          <span class="tech-tag">MeitY Backed</span>
-          <span class="tech-tag">NIELIT Certified</span>
+          <span class="tech-tag">WordPress / Elementor</span><span class="tech-tag">EDA Virtual Labs</span><span class="tech-tag">LearnDash LMS</span><span class="tech-tag">Keycloak SSO</span><span class="tech-tag">MeitY Backed</span><span class="tech-tag">NIELIT Certified</span>
         </div>
       </div>
     </div>
-
-    <!-- AgriAnalyze -->
     <div class="project-card reveal">
       <div class="project-banner purple"></div>
       <div class="project-header">
-        <div class="project-icon" style="background:linear-gradient(135deg,rgba(123,104,238,.2),rgba(255,110,199,.15))">🌾</div>
-        <div class="project-links">
-          <a href="https://agri-drone-frontend.vercel.app/" target="_blank" class="project-link" title="Live Demo">🌐</a>
-        </div>
+        <div class="project-icon" style="background:linear-gradient(135deg,rgba(123,104,238,.2),rgba(255,110,199,.15))">&#127806;</div>
+        <div class="project-links"><a href="https://agri-drone-frontend.vercel.app/" target="_blank" class="project-link" title="Live Demo">&#127760;</a></div>
       </div>
       <div class="project-body">
-        <div class="project-meta">
-          <span class="project-status"><span class="sdot"></span> Live Demo</span>
-        </div>
+        <div class="project-meta"><span class="project-status"><span class="sdot"></span> Live Demo</span></div>
         <h3>AgriAnalyze — AI Drone Crop Analysis</h3>
-        <p><strong>Intelligent precision agriculture platform</strong> leveraging drone imagery and deep learning to democratize crop health monitoring. Farmers upload high-resolution drone photos; AI models instantly detect crop diseases (wheat blast, rice leaf scald, etc.), quantify affected areas, estimate yield impact, and recommend treatment protocols. Built on YOLOv8 object detection trained on 27,000+ labeled agricultural samples, achieving 92% classification accuracy. Generates detailed field health reports with visual annotations, disease severity scores, and treatment timelines — reducing crop loss through early intervention and enabling data-driven farming decisions for smallholder farmers.</p>
+        <p><strong>Intelligent precision agriculture platform</strong> leveraging drone imagery and deep learning to democratize crop health monitoring. Farmers upload high-resolution drone photos; AI models instantly detect crop diseases (wheat blast, rice leaf scald, etc.), quantify affected areas, estimate yield impact, and recommend treatment protocols. Built on YOLOv8 object detection trained on 27,000+ labeled agricultural samples, achieving 92% classification accuracy.</p>
         <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">YOLO v8</span>
-          <span class="tech-tag">OpenCV</span>
-          <span class="tech-tag">TensorFlow</span>
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">FastAPI</span>
-          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">Python</span><span class="tech-tag">YOLO v8</span><span class="tech-tag">OpenCV</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">React</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Computer Vision</span>
         </div>
       </div>
     </div>
-
-    <!-- Keycloak SSO -->
     <div class="project-card reveal">
       <div class="project-banner blue"></div>
       <div class="project-header">
-        <div class="project-icon" style="background:linear-gradient(135deg,rgba(0,191,255,.2),rgba(0,212,170,.15))">🔐</div>
-        <div class="project-links">
-          <a href="https://sso.echiphub.in/" target="_blank" class="project-link" title="Live SSO">🌐</a>
-        </div>
+        <div class="project-icon" style="background:linear-gradient(135deg,rgba(0,191,255,.2),rgba(0,212,170,.15))">&#128274;</div>
+        <div class="project-links"><a href="https://sso.echiphub.in/" target="_blank" class="project-link" title="Live SSO">&#127760;</a></div>
       </div>
       <div class="project-body">
-        <div class="project-meta">
-          <span class="project-status" style="color:var(--aurora-3);background:rgba(0,191,255,.08);border-color:rgba(0,191,255,.2)"><span class="sdot" style="background:var(--aurora-3)"></span> Live &amp; Active</span>
-        </div>
+        <div class="project-meta"><span class="project-status" style="color:var(--aurora-3);background:rgba(0,191,255,.08);border-color:rgba(0,191,255,.2)"><span class="sdot" style="background:var(--aurora-3)"></span> Live &amp; Active</span></div>
         <h3>Keycloak SSO — Identity &amp; Access Management</h3>
-        <p><strong>Production-grade Single Sign-On (SSO) &amp; Identity Platform</strong> deployed at <a href="https://sso.echiphub.in/" target="_blank" style="color:var(--aurora-1)">sso.echiphub.in</a> as the centralized authentication backbone of the eChipHub ecosystem. Built on Red Hat Keycloak, it orchestrates identity and access across 6+ applications (edX, Indico, Guacamole, JupyterHub, Frappe Helpdesk, OpenEdX/Tutor) using OAuth 2.0, OpenID Connect (OIDC), and SAML protocols. Features include enterprise user provisioning, role-based access control (RBAC), multi-factor authentication (MFA), social identity federation, and granular permission matrices. Secures access for 1000+ users across institutional and government boundaries with audit logging and compliance tracking.</p>
+        <p><strong>Production-grade Single Sign-On (SSO) &amp; Identity Platform</strong> deployed at <a href="https://sso.echiphub.in/" target="_blank" style="color:var(--aurora-1)">sso.echiphub.in</a> as the centralized authentication backbone of the eChipHub ecosystem. Built on Red Hat Keycloak, it orchestrates identity across 6+ applications using OAuth 2.0, OpenID Connect (OIDC), and SAML protocols. Features RBAC, MFA, social identity federation, and granular permission matrices. Secures access for 1000+ users.</p>
         <div class="tech-stack">
-          <span class="tech-tag">Keycloak</span>
-          <span class="tech-tag">OAuth 2.0</span>
-          <span class="tech-tag">OpenID Connect</span>
-          <span class="tech-tag">SAML</span>
-          <span class="tech-tag">Docker</span>
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">Nginx</span>
-          <span class="tech-tag">RBAC</span>
+          <span class="tech-tag">Keycloak</span><span class="tech-tag">OAuth 2.0</span><span class="tech-tag">OpenID Connect</span><span class="tech-tag">SAML</span><span class="tech-tag">Docker</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Nginx</span><span class="tech-tag">RBAC</span>
         </div>
       </div>
     </div>
-
-    <!-- edX Platform -->
     <div class="project-card reveal">
       <div class="project-banner purple"></div>
       <div class="project-header">
-        <div class="project-icon" style="background:linear-gradient(135deg,rgba(123,104,238,.2),rgba(255,110,199,.15))">📚</div>
-        <div class="project-links">
-          <a href="https://edx.echiphub.in/" target="_blank" class="project-link" title="Live Platform">🌐</a>
-        </div>
+        <div class="project-icon" style="background:linear-gradient(135deg,rgba(123,104,238,.2),rgba(255,110,199,.15))">&#128218;</div>
+        <div class="project-links"><a href="https://edx.echiphub.in/" target="_blank" class="project-link" title="Live Platform">&#127760;</a></div>
       </div>
       <div class="project-body">
-        <div class="project-meta">
-          <span class="project-status"><span class="sdot"></span> Live &amp; Active</span>
-        </div>
+        <div class="project-meta"><span class="project-status"><span class="sdot"></span> Live &amp; Active</span></div>
         <h3>Open edX — Custom E-Learning Platform</h3>
-        <p><strong>Self-hosted Open edX LMS/CMS</strong> deployed at <a href="https://edx.echiphub.in/" target="_blank" style="color:var(--aurora-1)">edx.echiphub.in</a> managing the full course lifecycle for semiconductor education. Handles content authoring, video delivery, interactive quizzes, digital certificate issuance, and learner progress analytics. Seamlessly integrated with Keycloak SSO for unified authentication, enabling single sign-on across NIELIT centers, industry partners, and enterprise training programs. Supports bulk learner enrollment, custom branding, and institutional dashboard analytics.</p>
+        <p><strong>Self-hosted Open edX LMS/CMS</strong> deployed at <a href="https://edx.echiphub.in/" target="_blank" style="color:var(--aurora-1)">edx.echiphub.in</a> managing the full course lifecycle for semiconductor education. Handles content authoring, video delivery, interactive quizzes, digital certificate issuance, and learner progress analytics. Seamlessly integrated with Keycloak SSO for unified authentication across NIELIT centers.</p>
         <div class="tech-stack">
-          <span class="tech-tag">Open edX (Tutor)</span>
-          <span class="tech-tag">Django / Python</span>
-          <span class="tech-tag">MySQL</span>
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">Docker / Kubernetes</span>
-          <span class="tech-tag">Keycloak SSO</span>
-          <span class="tech-tag">Nginx</span>
+          <span class="tech-tag">Open edX (Tutor)</span><span class="tech-tag">Django / Python</span><span class="tech-tag">MySQL</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Docker / Kubernetes</span><span class="tech-tag">Keycloak SSO</span><span class="tech-tag">Nginx</span>
         </div>
       </div>
     </div>
-
-    <!-- Indico Workshop Platform -->
     <div class="project-card reveal">
       <div class="project-banner pink"></div>
       <div class="project-header">
-        <div class="project-icon" style="background:linear-gradient(135deg,rgba(255,110,199,.2),rgba(0,191,255,.15))">🎤</div>
-        <div class="project-links">
-          <a href="https://events.echiphub.in/" target="_blank" class="project-link" title="Live Events">🌐</a>
-        </div>
+        <div class="project-icon" style="background:linear-gradient(135deg,rgba(255,110,199,.2),rgba(0,191,255,.15))">&#127908;</div>
+        <div class="project-links"><a href="https://events.echiphub.in/" target="_blank" class="project-link" title="Live Events">&#127760;</a></div>
       </div>
       <div class="project-body">
-        <div class="project-meta">
-          <span class="project-status" style="color:var(--aurora-4);background:rgba(255,110,199,.08);border-color:rgba(255,110,199,.2)"><span class="sdot" style="background:var(--aurora-4)"></span> Live &amp; Active</span>
-        </div>
+        <div class="project-meta"><span class="project-status" style="color:var(--aurora-4);background:rgba(255,110,199,.08);border-color:rgba(255,110,199,.2)"><span class="sdot" style="background:var(--aurora-4)"></span> Live &amp; Active</span></div>
         <h3>Indico — Conference &amp; Workshop Management</h3>
-        <p><strong>Enterprise-grade event management &amp; conferencing platform</strong> deployed at <a href="https://events.echiphub.in/" target="_blank" style="color:var(--aurora-1)">events.echiphub.in</a>. Manages end-to-end workshop and conference lifecycles — speaker registration, abstract/paper submissions, dynamic agenda scheduling, real-time participant tracking, and comprehensive attendee management. Seamlessly integrated with Keycloak SSO for secure unified authentication. Supports hybrid events with built-in video streaming capabilities, live audience engagement tools, interactive Q&amp;A, and post-event analytics dashboards tracking attendance, engagement metrics, and feedback. Powers semiconductor workshops, academic seminars, and industry conferences across the NIELIT ecosystem with proven scalability for 1000+ concurrent participants and 10,000+ total registrations.</p>
+        <p><strong>Enterprise-grade event management &amp; conferencing platform</strong> deployed at <a href="https://events.echiphub.in/" target="_blank" style="color:var(--aurora-1)">events.echiphub.in</a>. Manages end-to-end workshop lifecycles — speaker registration, abstract submissions, dynamic agenda scheduling, real-time participant tracking, and comprehensive attendee management. Integrated with Keycloak SSO. Supports hybrid events with video streaming, live Q&amp;A, and post-event analytics.</p>
         <div class="tech-stack">
-          <span class="tech-tag">Indico (CERN)</span>
-          <span class="tech-tag">Python / Flask</span>
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">Redis</span>
-          <span class="tech-tag">Docker</span>
-          <span class="tech-tag">Keycloak SSO</span>
-          <span class="tech-tag">Video Streaming</span>
-          <span class="tech-tag">Real-time Analytics</span>
+          <span class="tech-tag">Indico (CERN)</span><span class="tech-tag">Python / Flask</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Redis</span><span class="tech-tag">Docker</span><span class="tech-tag">Keycloak SSO</span><span class="tech-tag">Video Streaming</span>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ═══════ ACHIEVEMENTS ═══════ -->
+<!-- ACHIEVEMENTS -->
 <section id="achievements" style="background:var(--bg-secondary)">
   <div class="section-header reveal">
     <p class="section-label">Recognition</p>
@@ -633,30 +569,14 @@ section{position:relative;z-index:1;padding:7rem 8%}
     <div class="section-line"></div>
   </div>
   <div class="achievements-grid">
-    <div class="achievement-card reveal">
-      <div class="icon">⭐</div>
-      <h4>ZS Client Recognition</h4>
-      <p>"Exceeds Expectations" rating for output quality and pipeline robustness across client deliverables</p>
-    </div>
-    <div class="achievement-card reveal">
-      <div class="icon">🇮🇳</div>
-      <h4>Government-Backed Contribution</h4>
-      <p>Contributed to NIELIT × MeitY semiconductor education initiative — eChipHub — supporting India's chip design mission</p>
-    </div>
-    <div class="achievement-card reveal">
-      <div class="icon">🌐</div>
-      <h4>Open-Source Contributor</h4>
-      <p>LetsGrowMore Summer of Code — contributed analytics components to market-focused open-source web projects</p>
-    </div>
-    <div class="achievement-card reveal">
-      <div class="icon">🎓</div>
-      <h4>Academic Excellence</h4>
-      <p>CGPA 9.49/10 — Top 5% of Computer Science graduating batch, MSIT Delhi 2023</p>
-    </div>
+    <div class="achievement-card reveal"><div class="icon">&#11088;</div><h4>ZS Client Recognition</h4><p>"Exceeds Expectations" rating for output quality and pipeline robustness across client deliverables</p></div>
+    <div class="achievement-card reveal"><div class="icon">&#127470;&#127475;</div><h4>Government-Backed Contribution</h4><p>Contributed to NIELIT x MeitY semiconductor education initiative — eChipHub — supporting India's chip design mission</p></div>
+    <div class="achievement-card reveal"><div class="icon">&#127760;</div><h4>Open-Source Contributor</h4><p>LetsGrowMore Summer of Code — contributed analytics components to market-focused open-source web projects</p></div>
+    <div class="achievement-card reveal"><div class="icon">&#127891;</div><h4>Academic Excellence</h4><p>CGPA 9.49/10 — Top 5% of Computer Science graduating batch, MSIT Delhi 2023</p></div>
   </div>
 </section>
 
-<!-- ═══════ EDUCATION ═══════ -->
+<!-- EDUCATION -->
 <section id="education">
   <div class="section-header reveal">
     <p class="section-label">Background</p>
@@ -669,7 +589,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       <div class="timeline-card">
         <span class="period">2019 — 2023</span>
         <h3>B.Tech — Computer Science & Engineering</h3>
-        <p class="company">🎓 Maharaja Surajmal Institute of Technology, New Delhi</p>
+        <p class="company">&#127891; Maharaja Surajmal Institute of Technology, New Delhi</p>
         <ul>
           <li>CGPA: 9.49 / 10.0 — Top 5% of graduating batch</li>
           <li>Specialization: Data Science, Machine Learning & Analytics</li>
@@ -682,7 +602,7 @@ section{position:relative;z-index:1;padding:7rem 8%}
       <div class="timeline-card">
         <span class="period">Certifications</span>
         <h3>Professional Certifications</h3>
-        <p class="company">🏆 Industry & Cloud Credentials</p>
+        <p class="company">&#127942; Industry & Cloud Credentials</p>
         <ul>
           <li>AWS Certified Cloud Practitioner</li>
           <li>Microsoft Power BI Data Analyst Associate</li>
@@ -694,140 +614,48 @@ section{position:relative;z-index:1;padding:7rem 8%}
   </div>
 </section>
 
-<!-- ═══════ CONTACT ═══════ -->
+<!-- CONTACT -->
 <section id="contact" class="contact-section" style="background:var(--bg-secondary)">
-  <!-- Floating SVG illustrations -->
-  <div class="floating-illustration float-1">
-    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="8" y="8" width="24" height="24" rx="4" fill="var(--aurora-1)" opacity=".5"/>
-      <rect x="38" y="8" width="24" height="24" rx="4" fill="var(--aurora-3)" opacity=".4"/>
-      <rect x="8" y="38" width="24" height="24" rx="4" fill="var(--aurora-2)" opacity=".4"/>
-      <rect x="38" y="38" width="24" height="24" rx="4" fill="var(--aurora-4)" opacity=".4"/>
-    </svg>
-  </div>
-  <div class="floating-illustration float-2">
-    <svg viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="42" cy="18" r="11" fill="var(--aurora-3)" opacity=".55"/>
-      <path d="M42 29c-9 0-16 6-16 13v20h32V42c0-7-7-13-16-13z" fill="var(--aurora-3)" opacity=".45"/>
-      <line x1="42" y1="49" x2="30" y2="69" stroke="var(--aurora-2)" stroke-width="5" stroke-linecap="round" opacity=".5"/>
-      <line x1="42" y1="49" x2="54" y2="69" stroke="var(--aurora-2)" stroke-width="5" stroke-linecap="round" opacity=".5"/>
-      <line x1="42" y1="38" x2="28" y2="52" stroke="var(--aurora-2)" stroke-width="5" stroke-linecap="round" opacity=".5"/>
-      <line x1="42" y1="38" x2="56" y2="52" stroke="var(--aurora-2)" stroke-width="5" stroke-linecap="round" opacity=".5"/>
-    </svg>
-  </div>
-  <div class="floating-illustration float-3">
-    <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="32" cy="40" rx="18" ry="14" fill="var(--aurora-1)" opacity=".5"/>
-      <circle cx="32" cy="26" r="14" fill="var(--aurora-1)" opacity=".5"/>
-      <path d="M22 18l-4-10 3-1.5 7 11z" fill="var(--aurora-1)" opacity=".5"/>
-      <path d="M42 18l4-10-3-1.5-7 11z" fill="var(--aurora-1)" opacity=".5"/>
-      <circle cx="27" cy="24" r="2.2" fill="var(--bg-primary)" opacity=".8"/>
-      <circle cx="37" cy="24" r="2.2" fill="var(--bg-primary)" opacity=".8"/>
-    </svg>
-  </div>
-  <div class="floating-illustration float-4">
-    <svg viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M37 8l9 22-9-5-9 5L37 8z" fill="var(--aurora-1)" opacity=".55"/>
-      <circle cx="37" cy="35" r="9" fill="var(--aurora-3)" opacity=".5"/>
-      <rect x="32" y="44" width="10" height="16" rx="3" fill="var(--aurora-2)" opacity=".5"/>
-      <path d="M22 56l10 6v8L22 64z" fill="var(--aurora-4)" opacity=".45"/>
-      <path d="M52 56l-10 6v8l10-6z" fill="var(--aurora-4)" opacity=".45"/>
-    </svg>
-  </div>
+  <div class="floating-illustration float-1"><svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="24" height="24" rx="4" fill="var(--aurora-1)" opacity=".5"/><rect x="38" y="8" width="24" height="24" rx="4" fill="var(--aurora-3)" opacity=".4"/><rect x="8" y="38" width="24" height="24" rx="4" fill="var(--aurora-2)" opacity=".4"/><rect x="38" y="38" width="24" height="24" rx="4" fill="var(--aurora-4)" opacity=".4"/></svg></div>
+  <div class="floating-illustration float-2"><svg viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="42" cy="18" r="11" fill="var(--aurora-3)" opacity=".55"/><path d="M42 29c-9 0-16 6-16 13v20h32V42c0-7-7-13-16-13z" fill="var(--aurora-3)" opacity=".45"/></svg></div>
+  <div class="floating-illustration float-3"><svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="32" cy="40" rx="18" ry="14" fill="var(--aurora-1)" opacity=".5"/><circle cx="32" cy="26" r="14" fill="var(--aurora-1)" opacity=".5"/></svg></div>
+  <div class="floating-illustration float-4"><svg viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M37 8l9 22-9-5-9 5L37 8z" fill="var(--aurora-1)" opacity=".55"/><circle cx="37" cy="35" r="9" fill="var(--aurora-3)" opacity=".5"/></svg></div>
 
   <div class="section-header reveal">
     <p class="section-label">Let's Connect</p>
     <h2 class="section-title">Get In Touch</h2>
     <div class="section-line"></div>
   </div>
-
   <div class="contact-wrapper">
-    <!-- Left: direct links -->
     <div class="reveal">
       <div class="contact-info">
         <h3>Have a project in mind?</h3>
         <p>I'm always open to discussing software engineering roles, data engineering projects, BI consulting, or just an interesting problem to solve. Drop me a message!</p>
       </div>
       <div class="contact-links">
-        <a href="mailto:nikhil18chaudhary@gmail.com" class="contact-link-item">
-          <span class="cli-icon">📧</span>
-          <div class="cli-text">
-            <strong>Email Me</strong>
-            <span>nikhil18chaudhary@gmail.com</span>
-          </div>
-        </a>
-        <a href="tel:+918851154621" class="contact-link-item">
-          <span class="cli-icon">📱</span>
-          <div class="cli-text">
-            <strong>Call / WhatsApp</strong>
-            <span>+91-8851154621</span>
-          </div>
-        </a>
-        <a href="https://linkedin.com/in/nikcd" target="_blank" rel="noopener" class="contact-link-item">
-          <span class="cli-icon">💼</span>
-          <div class="cli-text">
-            <strong>LinkedIn</strong>
-            <span>linkedin.com/in/nikcd</span>
-          </div>
-        </a>
-        <a href="https://github.com/nik464" target="_blank" rel="noopener" class="contact-link-item">
-          <span class="cli-icon">🔗</span>
-          <div class="cli-text">
-            <strong>GitHub</strong>
-            <span>github.com/nik464</span>
-          </div>
-        </a>
+        <a href="mailto:nikhil18chaudhary@gmail.com" class="contact-link-item"><span class="cli-icon">&#128231;</span><div class="cli-text"><strong>Email Me</strong><span>nikhil18chaudhary@gmail.com</span></div></a>
+        <a href="tel:+918851154621" class="contact-link-item"><span class="cli-icon">&#128241;</span><div class="cli-text"><strong>Call / WhatsApp</strong><span>+91-8851154621</span></div></a>
+        <a href="https://linkedin.com/in/nikcd" target="_blank" rel="noopener" class="contact-link-item"><span class="cli-icon">&#128188;</span><div class="cli-text"><strong>LinkedIn</strong><span>linkedin.com/in/nikcd</span></div></a>
+        <a href="https://github.com/nik464" target="_blank" rel="noopener" class="contact-link-item"><span class="cli-icon">&#128279;</span><div class="cli-text"><strong>GitHub</strong><span>github.com/nik464</span></div></a>
       </div>
     </div>
-
-    <!-- Right: contact form with Formspree backend -->
     <div class="contact-form-wrap reveal">
       <h3 class="form-title">Send a Message</h3>
       <p class="form-subtitle">I typically respond within 24 hours.</p>
-      <!--
-        SETUP: Replace "YOUR_FORM_ID" below with your Formspree form ID.
-        1. Go to https://formspree.io → New Form
-        2. Copy the form ID (e.g. xpwzgkqr)
-        3. Replace YOUR_FORM_ID with it
-      -->
       <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="form-row">
-          <div class="form-group">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name" required autocomplete="name">
-          </div>
-          <div class="form-group">
-            <label for="femail">Email</label>
-            <input type="email" id="femail" name="email" placeholder="your@email.com" required autocomplete="email">
-          </div>
+          <div class="form-group"><label for="fname">Name</label><input type="text" id="fname" name="name" placeholder="Your name" required autocomplete="name"></div>
+          <div class="form-group"><label for="femail">Email</label><input type="email" id="femail" name="email" placeholder="your@email.com" required autocomplete="email"></div>
         </div>
-        <div class="form-group">
-          <label for="fsubject">Subject</label>
-          <select id="fsubject" name="subject">
-            <option value="">Select a topic...</option>
-            <option value="Software Engineer Role">Software Engineering Role</option>
-            <option value="Data Engineering">Data Engineering / Pipeline Work</option>
-            <option value="BI Dashboards">BI / Dashboard Consulting</option>
-            <option value="Full-time Role">Full-time Opportunity</option>
-            <option value="Freelance">Freelance Project</option>
-            <option value="Collaboration">Collaboration / Open Source</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="fmsg">Message</label>
-          <textarea id="fmsg" name="message" placeholder="Tell me about your project or idea..." required></textarea>
-        </div>
-        <button type="submit" class="form-submit" id="submitBtn">
-          <span id="btnText">✉ Send Message</span>
-        </button>
+        <div class="form-group"><label for="fsubject">Subject</label><select id="fsubject" name="subject"><option value="">Select a topic...</option><option value="Software Engineer Role">Software Engineering Role</option><option value="Data Engineering">Data Engineering / Pipeline Work</option><option value="BI Dashboards">BI / Dashboard Consulting</option><option value="Full-time Role">Full-time Opportunity</option><option value="Freelance">Freelance Project</option><option value="Collaboration">Collaboration / Open Source</option><option value="Other">Other</option></select></div>
+        <div class="form-group"><label for="fmsg">Message</label><textarea id="fmsg" name="message" placeholder="Tell me about your project or idea..." required></textarea></div>
+        <button type="submit" class="form-submit" id="submitBtn"><span id="btnText">&#9993; Send Message</span></button>
         <div class="form-msg" id="formMsg"></div>
       </form>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer class="footer">
   <div class="footer-links">
     <a href="mailto:nikhil18chaudhary@gmail.com">Email</a>
@@ -836,124 +664,23 @@ section{position:relative;z-index:1;padding:7rem 8%}
     <a href="https://echiphub.in/" target="_blank">eChipHub</a>
     <a href="https://agri-drone-frontend.vercel.app/" target="_blank">AgriAnalyze</a>
   </div>
-  <p>© 2026 Nikhil Chaudhary — Crafted with <span class="heart">♥</span> &amp; data.</p>
+  <p>&copy; 2026 Nikhil Chaudhary — Crafted with <span class="heart">&hearts;</span> &amp; data.</p>
 </footer>
 
 <script>
-// ─── Particles ───
-(function(){
-  const c=document.getElementById('particles');
-  for(let i=0;i<90;i++){
-    const p=document.createElement('div');
-    p.className='particle';
-    const size=1+Math.random()*2;
-    p.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;--dur:${2+Math.random()*5}s;--op:${.15+Math.random()*.4};animation-delay:${Math.random()*6}s;width:${size}px;height:${size}px;background:${Math.random()>.5?'#00d4aa':'#7b68ee'}`;
-    c.appendChild(p);
-  }
-})();
-
-// ─── Navbar scroll ───
-window.addEventListener('scroll',()=>{
-  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60);
-});
-
-// ─── Mobile nav ───
+(function(){const c=document.getElementById('particles');for(let i=0;i<90;i++){const p=document.createElement('div');p.className='particle';const size=1+Math.random()*2;p.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;--dur:${2+Math.random()*5}s;--op:${.15+Math.random()*.4};animation-delay:${Math.random()*6}s;width:${size}px;height:${size}px;background:${Math.random()>.5?'#00d4aa':'#7b68ee'}`;c.appendChild(p)}})();
+window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60)});
 function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
 function closeNav(){document.getElementById('navLinks').classList.remove('open')}
-document.addEventListener('click',e=>{
-  const nav=document.getElementById('navLinks');
-  if(nav.classList.contains('open')&&!e.target.closest('nav'))nav.classList.remove('open');
-});
-
-// ─── Scroll reveal ───
-const observer=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}});
-},{threshold:.12});
+document.addEventListener('click',e=>{const nav=document.getElementById('navLinks');if(nav.classList.contains('open')&&!e.target.closest('nav'))nav.classList.remove('open')});
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-
-// ─── Smooth anchor scroll ───
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    e.preventDefault();
-    const t=document.querySelector(a.getAttribute('href'));
-    if(t){t.scrollIntoView({behavior:'smooth',block:'start'});closeNav()}
-  });
-});
-
-// ─── Counter animation ───
-function animateCounters(){
-  document.querySelectorAll('.stat h3').forEach(el=>{
-    const text=el.textContent;
-    const num=parseFloat(text);
-    if(isNaN(num))return;
-    const suffix=text.replace(/[\d.]/g,'');
-    const decimal=text.includes('.')?1:0;
-    let start=0,step=num/50;
-    const timer=setInterval(()=>{
-      start+=step;
-      if(start>=num){start=num;clearInterval(timer)}
-      el.textContent=start.toFixed(decimal)+suffix;
-    },30);
-  });
-}
-const heroObs=new IntersectionObserver(entries=>{
-  if(entries[0].isIntersecting){animateCounters();heroObs.disconnect()}
-},{threshold:.5});
-const heroStats=document.querySelector('.hero-stats');
-if(heroStats)heroObs.observe(heroStats);
-
-// ─── Toast helper ───
-function showToast(msg,duration=4000){
-  const t=document.getElementById('toast');
-  t.textContent=msg;t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),duration);
-}
-
-// ─── Contact form (Formspree) ───
-document.getElementById('contactForm').addEventListener('submit',async function(e){
-  e.preventDefault();
-  const btn=document.getElementById('submitBtn');
-  const txt=document.getElementById('btnText');
-  const msg=document.getElementById('formMsg');
-  btn.disabled=true;
-  txt.textContent='Sending…';
-  msg.className='form-msg';msg.style.display='none';
-
-  // Check if Formspree ID has been configured
-  const action=this.action;
-  if(action.includes('YOUR_FORM_ID')){
-    // Demo mode — simulate success
-    await new Promise(r=>setTimeout(r,1200));
-    btn.disabled=false;txt.textContent='✉ Send Message';
-    msg.textContent='✅ Demo mode: message received! (Replace YOUR_FORM_ID in the HTML with your Formspree ID to go live)';
-    msg.className='form-msg success';
-    this.reset();
-    showToast('🎉 Message sent successfully!');
-    return;
-  }
-
-  try{
-    const res=await fetch(action,{
-      method:'POST',
-      body:new FormData(this),
-      headers:{Accept:'application/json'}
-    });
-    if(res.ok){
-      msg.textContent='✅ Thanks! Your message was sent. I\'ll get back to you within 24 hours.';
-      msg.className='form-msg success';
-      this.reset();
-      showToast('🎉 Message sent! Talk soon.');
-    }else{
-      const data=await res.json();
-      throw new Error(data?.errors?.[0]?.message||'Server error');
-    }
-  }catch(err){
-    msg.textContent='❌ Something went wrong: '+err.message+'. Try emailing directly: nikhil18chaudhary@gmail.com';
-    msg.className='form-msg error';
-  }
-  btn.disabled=false;
-  txt.textContent='✉ Send Message';
-});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t){t.scrollIntoView({behavior:'smooth',block:'start'});closeNav()}})});
+function animateCounters(){document.querySelectorAll('.stat h3').forEach(el=>{const text=el.textContent;const num=parseFloat(text);if(isNaN(num))return;const suffix=text.replace(/[\d.]/g,'');const decimal=text.includes('.')?1:0;let start=0,step=num/50;const timer=setInterval(()=>{start+=step;if(start>=num){start=num;clearInterval(timer)}el.textContent=start.toFixed(decimal)+suffix},30)})}
+const heroObs=new IntersectionObserver(entries=>{if(entries[0].isIntersecting){animateCounters();heroObs.disconnect()}},{threshold:.5});
+const heroStats=document.querySelector('.hero-stats');if(heroStats)heroObs.observe(heroStats);
+function showToast(msg,duration=4000){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),duration)}
+document.getElementById('contactForm').addEventListener('submit',async function(e){e.preventDefault();const btn=document.getElementById('submitBtn');const txt=document.getElementById('btnText');const msg=document.getElementById('formMsg');btn.disabled=true;txt.textContent='Sending...';msg.className='form-msg';msg.style.display='none';const action=this.action;if(action.includes('YOUR_FORM_ID')){await new Promise(r=>setTimeout(r,1200));btn.disabled=false;txt.textContent='\u2709 Send Message';msg.textContent='\u2705 Demo mode: message received! (Replace YOUR_FORM_ID with your Formspree ID to go live)';msg.className='form-msg success';this.reset();showToast('\uD83C\uDF89 Message sent successfully!');return}try{const res=await fetch(action,{method:'POST',body:new FormData(this),headers:{Accept:'application/json'}});if(res.ok){msg.textContent='\u2705 Thanks! Your message was sent.';msg.className='form-msg success';this.reset();showToast('\uD83C\uDF89 Message sent!')}else{const data=await res.json();throw new Error(data?.errors?.[0]?.message||'Server error')}}catch(err){msg.textContent='\u274C Something went wrong: '+err.message;msg.className='form-msg error'}btn.disabled=false;txt.textContent='\u2709 Send Message'});
 </script>
 </body>
 </html>
